@@ -3,9 +3,58 @@ body{
 }
 header{
     font-size: 30px;
-    background-color: rgba(224, 82, 220, 0.719);
+    background-color: rgb(170, 46, 166);
+    color: white;
+    text-align: center;
+    padding: 5px;
 }
 
 h1{
+    font-size: 22px;
+    text-align: center;
+}
+
+h2{
+    font-size: 22px;
+    text-align: center;
+}
+
+.introPara{
     font-size: 18px;
+    text-align: justify;
+    width: 94%;
+    padding-left: 3%;
+}
+
+.Intro{
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.eForm{
+    text-align: center;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+input{
+    width: 250px;
+    height: 40px;
+    font-size: larger;
+    background-color: lightblue;
+    text-align: center;
+}
+
+button{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(170, 46, 166);
+    color: white;
+    font-weight: bolder;
+}
+
+p{
+    text-align: center;
 }
