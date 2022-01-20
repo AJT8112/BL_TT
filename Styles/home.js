@@ -10,15 +10,14 @@ function formData() {
     let relation = document.getElementById("relation").value;
     let email = document.getElementById("emailAdd").value;
 
-
     //VALIDATE email contains an @ and that it is in the middle of the email address.
     //check that IF email begins with @, it is invalid.
     if(email.startsWith("@")){
-        alert("Please Enter a Valid Email Address")
+        alert("Nice Try! That Email Address isn't valid")
     } 
     //IF it doesn't, check that IF email ends with @, it is invalid.
     else if(email.endsWith("@")){
-        alert("Please Enter a Valid Email Address")
+        alert("Nice Try! That Email Address isn't valid")
     }
     //IF email doesn't then check the email contains an @, if it does it is valid, return an alert to input all data entered.
     else if(email.indexOf('@') > -1){
@@ -26,7 +25,7 @@ function formData() {
     }
     //IF the email doesn't contain an @, then it is invalid.
     else {
-        alert("Please Enter a Valid Email Address")
+        alert("Nice Try! That Email Address isn't valid")
     };
 
     /*
