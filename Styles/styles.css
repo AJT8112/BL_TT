@@ -15,8 +15,13 @@ h1{
 }
 
 h2{
-    font-size: 22px;
+    font-size: 20px;
+    background-color: rgb(170, 46, 166);
+    color: white;
     text-align: center;
+    padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .introPara{

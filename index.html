@@ -7,28 +7,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arapey">
 </head>
 <body>
-    <header>My Small Demonstration of Current Coding Abilities</header>
+    <header>A Preview of my Current Coding Abilities</header>
     <div class="Intro">
-        <h1>Hello and thank you for reviewing my work</h1>
-        <p class="introPara">Following difficulties with accessing and processing the files required for the full tech test, please see below a demonstration of code that will allow for the requested functions in the MVC section of the technical test. At this current moment in time I do not have expereince with C# or the .NET framework, however I have self-taught (and attended courses on) HTML, CSS and JavaScript.</p>
-        <p class="introPara">I am very excited to use my passion and desire to learn, to develop my understanding and implement the use of the .NET framework and Cloud technologies in my future career to best benefit both personal development and the BLS company (acronym used for anonymity).</p>
+        <h1>Hello and welcome to my alternative technical test (based on MVC tech test set)</h1>
+        <p class="introPara">Firstly I would like to say thank you for allowing me to demonstrate my current abilities despite them not being in line with the original technical test provided. Whilst I do not currently have the technical understanding of the files in the dropbox, the C# language and .NET framework for this test, I am keen to utilise my passion for learning and development to quickly learn these skills with BLS.</p>
+        <p class="introPara">In the meantime, please see below a demonstration of code that will allow for the requested outputs in the MVC section of the technical test. I completed this using HTML, CSS and JavaScript which I have both self-taught and attended courses for. I would greatly appreciate the opportunity to pick your brain regarding ways I could improve this code, whilst also going over the question outlined in the JS Pseudocode lines 1 - 3.</p>
+        <p class="introPara">I am very excited to use my desire for continuous improvement, to develop my understanding and allow me to implement the use of the .NET framework and Cloud technologies in my future career to best benefit both personal development and the BLS company (acronym used for anonymity).</p>
     </div>
-    <div name="emailForm" class="eForm" id="person">
-        <h2>Please fill in the below information</h2>
-            <p>First Name:</p>
-            <input type="text" id="N" name="first" value=""></input>
-            <p>Surname:</p>
-            <input type="text" id="S" name="surname" value=""></input>
-            <p>Father's First Name:</p>
-            <input type="text" id="F" name="father" value=""></input>
-            <p>Your Relation To Your Father:</p>
-            <input type="text" id="R" name="son" value=""></input>
-        <p class="formText">Please Enter Your Email Address*</p>
-        <input type="text" id="E" name="email" value="" required></input>
-        <br>
-        <button type="button" onClick="getNval(), getSval(), getEval(), getFval(), getRval()">Submit (moment of truth)</button>
-    </div>
-
-<script src="Styles/index.js"></script>
+    <h2>Please enter your details below - make sure to enter a valid email address!</h2>
+    <form class="eForm" name="personData" id="person">
+        First Name: <input type="text" ID="firstName"></input>
+        Second Name: <input type="text" ID="secondName"></input>
+        Parents Name: <input type="text" ID="fathersName"></input>
+        Relation to Parent: <input type="text" ID="relation"></input>
+        Email Address: <input type="text" ID="emailAdd"></input>
+        <button type="button" value="Submit" onClick="formData()">Submit (moment of truth)</button>
+    </form>
+<script src="Styles/home.js"></script>
 </body>
 </html>

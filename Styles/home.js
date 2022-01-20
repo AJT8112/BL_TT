@@ -10,15 +10,23 @@ function formData() {
     let relation = document.getElementById("relation").value;
     let email = document.getElementById("emailAdd").value;
 
-    //VALIDATE email contains an @ symbol.
-    //if TRUE execute showing details in  thankyou for your submission.
-    if(email.includes('@')){
-        //Set thankyou message for if there is an @ in the email address.
-        alert("Thank you very much " + firstN + " " + secondN + " " + relation + " of " + fatherN + ", your participation in this tech test is greatly appreciated. I hope you have enjoyed the result and I would appreciate any feedback you have to offer =)");
+
+    //VALIDATE email contains an @ and that it is in the middle of the email address.
+    //check that IF email begins with @, it is invalid.
+    if(email.startsWith("@")){
+        alert("Please Enter a Valid Email Address")
+    } 
+    //IF it doesn't, check that IF email ends with @, it is invalid.
+    else if(email.endsWith("@")){
+        alert("Please Enter a Valid Email Address")
     }
-    //ELSE if FALSE then return an error sign to fill in valid email.
+    //IF email doesn't then check the email contains an @, if it does it is valid, return an alert to input all data entered.
+    else if(email.indexOf('@') > -1){
+        alert("Thank you very much " + firstN + " " + secondN + " " + relation + " of " + fatherN + ", your participation in this tech test is greatly appreciated. I hope you have enjoyed the result and I would appreciate any feedback you have to offer. =)")
+    }
+    //IF the email doesn't contain an @, then it is invalid.
     else {
-        alert("Please Enter a Valid Email Address");
+        alert("Please Enter a Valid Email Address")
     };
 
     /*
@@ -29,11 +37,10 @@ function formData() {
     console.log(email);
     */
 
-    //Update the inner HTML of the document to bring up the thankyou message and include names.
+};
 
     
 
-};
 
 
 
