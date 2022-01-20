@@ -1,6 +1,6 @@
-//Set values of person OBJECT
+//Set values
 
-let valN = ""
+var valN = ""
 let valS = ""
 let valF = ""
 let valR = ""
@@ -34,15 +34,13 @@ function getRval(){
     var valR = document.getElementById("R").value;
     console.log(valR);
 }
-function getEval(){s
+function getEval(){
     var valE = document.getElementById("E").value;
     console.log(valE);
 }
 
-
-//create person OBJECT to hold data
-
-//Validate that the input is an email address by having @ in the middle.
+console.log(firstName);
+//Validate data.
 
 //IF yes, produce message by pulling the information from the rest of the form.
 
