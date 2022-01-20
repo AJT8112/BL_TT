@@ -35,13 +35,18 @@ h2{
 .eForm{
     text-align: center;
     background-color: white;
-    padding-top: 5px;
+    padding-top: 15px;
     padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 input{
     width: 250px;
     height: 40px;
+    margin-bottom: 15px;
     font-size: larger;
     background-color: lightblue;
     text-align: center;
