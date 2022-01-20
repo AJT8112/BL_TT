@@ -13,22 +13,22 @@
         <p class="introPara">Following difficulties with accessing and processing the files required for the full tech test, please see below a demonstration of code that will allow for the requested functions in the MVC section of the technical test. At this current moment in time I do not have expereince with C# or the .NET framework, however I have self-taught (and attended courses on) HTML, CSS and JavaScript.</p>
         <p class="introPara">I am very excited to use my passion and desire to learn, to develop my understanding and implement the use of the .NET framework and Cloud technologies in my future career to best benefit both personal development and the BLS company (acronym used for anonymity).</p>
     </div>
-    <div class="eForm">
+    <div name="emailForm" class="eForm" id="person">
         <h2>Please fill in the below information</h2>
             <p>First Name:</p>
-            <input></input>
+            <input type="text" id="N" name="first" value=""></input>
             <p>Surname:</p>
-            <input></input>
+            <input type="text" id="S" name="surname" value=""></input>
             <p>Father's First Name:</p>
-            <input></input>
+            <input type="text" id="F" name="father" value=""></input>
             <p>Your Relation To Your Father:</p>
-            <input></input>
+            <input type="text" id="R" name="son" value=""></input>
         <p class="formText">Please Enter Your Email Address*</p>
-        <input></input>
+        <input type="text" id="E" name="email" value="" required></input>
         <br>
-        <button>Submit (moment of truth)</button>
+        <button type="button" onClick="getNval(), getSval(), getEval(), getFval(), getRval()">Submit (moment of truth)</button>
     </div>
 
-<script href="Styles/index.js"></script>
+<script src="Styles/index.js"></script>
 </body>
 </html>
