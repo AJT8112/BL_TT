@@ -28,13 +28,13 @@ function formData() {
         alert("Nice Try! That Email Address isn't valid")
     };
 
-    /*
+    
     console.log(firstN);
     console.log(secondN);
     console.log(fatherN);
     console.log(relation);
     console.log(email);
-    */
+    
 
 };
 
